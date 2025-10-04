@@ -5,10 +5,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 **Carl Sings** is a Next.js 15 blog application for documenting an anxious software developer's journey. The project features:
-- Pixel-perfect retro aesthetic inspired by Codecademy's clean, modern design
+- Pixel-perfect retro aesthetic, clean modern design
 - Category-based content system ("Carl Discovered", "Carl Cried", etc.)
 - AI integrations for content analysis and recommendations
-- Future expert feedback from neuroscientists and psychologists
 - Mental health awareness focus in tech culture
 
 ## Tech Stack

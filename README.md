@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Carl Sings 🎵
+
+A developer blog documenting the journey of an anxious software developer - the highs, lows, and everything in between.
+
+## About
+
+Carl Sings is a personal blog built with Next.js 15, featuring a retro pixel-perfect design. The blog chronicles the real experiences of a developer navigating through anxiety, bugs, breakthroughs, and celebrations in the software development world.
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript (strict mode)
+- **Styling:** Tailwind CSS v4
+- **UI Components:** shadcn/ui + Lucide React icons
+- **Content:** MDX with frontmatter
+- **Validation:** Zod
+- **Fonts:** Inter, JetBrains Mono, Press Start 2P
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server (with Turbopack)
+- `npm run build` - Build for production (with Turbopack)
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## Blog Categories
 
-To learn more about Next.js, take a look at the following resources:
+- **Carl Discovered** - New tools, frameworks, and concepts
+- **Carl Cried** - Bugs, frustrations, and difficult moments
+- **Carl Debugged** - Problem-solving victories
+- **Carl Celebrated** - Achievements and milestones
+- **Carl Overthought** - Architecture decisions and analysis paralysis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+/app                 # Next.js App Router pages
+/components          # React components
+  /ui               # Reusable UI components
+/lib                # Utility functions and configs
+  /types           # TypeScript type definitions
+  /config          # Configuration files
+/content            # MDX blog entries (coming soon)
+```
 
-## Deploy on Vercel
+## Development Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+See [CLAUDE.md](./CLAUDE.md) for detailed development guidance and architecture notes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See [TODO.md](./TODO.md) for current project tasks and progress (25/83 tasks complete - 30%).
+
+## Design System
+
+The blog features a retro pixel-perfect aesthetic with:
+- Custom color palette (pixel-blue, pixel-red, pixel-green, pixel-yellow)
+- Anxiety level indicators (5 levels with distinct colors)
+- Pixel-perfect buttons and cards with box shadows
+- Monospace fonts for code and retro elements
+
+## License
+
+MIT

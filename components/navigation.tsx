@@ -13,7 +13,7 @@ export function Navigation() {
               Carl.Sings()
             </h1>
             <span className="font-mono text-sm text-gray-500 hidden md:inline">
-              // when_he_doesn't_cry
+              {`// when_he_doesn't_cry`}
             </span>
           </Link>
 

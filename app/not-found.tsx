@@ -25,7 +25,7 @@ export default function NotFound() {
         </p>
 
         <p className="font-mono text-sm text-gray-500 mb-8">
-          // typical Lulu behavior
+          {`// typical Lulu behavior`}
         </p>
 
         {/* Error Details */}

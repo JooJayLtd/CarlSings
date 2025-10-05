@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Basil (Claude Code at claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
@@ -175,3 +175,20 @@ Use Zod for runtime validation of content structure.
 - ELI5 short explanation for each task
 - When asked to create tasks in TODO.md, create small, manageable tasks. Prioritise core functionality first. Use WYSIWYG task descriptions.
 - Use shadcn/ui components as much as possible, customizing styles via Tailwind and CSS variables. Use shadcn/ui for icons.
+- branch names should be `feature/<CARLS-no>-description` or `fix/<CARLS-no>-description` (eg. `feature/CARLS-22-zod-entry-schema`, `fix/CARLS-8-strict-tsconfig`)
+
+## Pull Request Guidelines
+
+- Follow the template in `.github/PULL_REQUEST_TEMPLATE.md`
+- Do NOT include a Test Plan section - the CI/CD pipeline handles automated checks (build, lint, type-checking)
+- Manual testing is assumed to be completed before creating the PR
+- Always include `Co-Authored-By: Basil <noreply@anthropic.com>` at the end of PR descriptions
+
+## Testing Strategy
+
+- **infra/TEST_PLAN.md** tracks what automated tests should be written for each feature
+- When completing a task, add test cases to TEST_PLAN.md for that CARLS number
+- Actual test implementation happens in Phase 12 (CARLS-68+)
+- Use TEST_PLAN.md as a checklist when writing tests later
+- CLAUDE.md
+- CLAUDE.md

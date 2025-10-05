@@ -77,10 +77,10 @@
 
 ## Phase 9: Content System (File-based)
 
-- [ ] [CARLS-52] Create content/ directory for MDX files
-- [ ] [CARLS-53] Create content/entries/ subdirectory
-- [ ] [CARLS-54] Create lib/content/mdx.ts with MDX file reading utilities
-- [ ] [CARLS-55] Add frontmatter parsing to lib/content/mdx.ts
+- [x] [CARLS-52] Create content/ directory for MDX files
+- [x] [CARLS-53] Create content/entries/ subdirectory
+- [x] [CARLS-54] Create lib/content/mdx.ts with MDX file reading utilities
+- [x] [CARLS-55] Add frontmatter parsing to lib/content/mdx.ts
 - [ ] [CARLS-56] Create first sample entry MDX: "first-day-anxiety.mdx"
 - [ ] [CARLS-57] Create second sample entry MDX: "discovered-usestate.mdx"
 - [ ] [CARLS-58] Create third sample entry MDX: "production-bug-nightmare.mdx"
@@ -127,4 +127,4 @@
 ---
 
 **Total Tasks:** 84
-**Current Progress:** 27/84 (32%)
+**Current Progress:** 31/84 (37%)

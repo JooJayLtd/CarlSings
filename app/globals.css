@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -207,4 +208,9 @@
 .pixel-button-secondary:hover {
   background: var(--pixel-blue);
   color: white;
+}
+
+/* Hide external link icons in prose */
+.prose a::after {
+  content: none !important;
 }

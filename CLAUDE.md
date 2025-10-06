@@ -7,8 +7,40 @@ This file provides guidance to Basil (Claude Code at claude.ai/code) when workin
 **Carl Sings** is a Next.js 15 blog application for documenting a developer's journey navigating dev life. The project features:
 - Pixel-perfect retro aesthetic, clean modern design
 - Category-based content system ("Carl Discovered", "Carl Cried", etc.)
+- Three-perspective blog format with distinct voices
 - AI integrations for content analysis and recommendations
 - Mental health awareness focus in tech culture
+
+### Writing Style Guide
+
+Blog posts use a three-perspective format, each with a distinct voice:
+
+**Carl's Voice** (The hero on a journey):
+- Third-person narrative, short punchy sentences
+- Show Carl trying, struggling, learning
+- Repetition of "Carl" creates rhythm and observational distance
+- Strip away explanation. Show behavior, not introspection.
+- Very concise - Carl's section should be the shortest
+- Example: "Carl wanted to write. Carl researched instead. Zero posts written."
+
+**Basil's Voice** (The teacher with references):
+- Clear, concise technical guidance
+- Links to authoritative sources: Martin Fowler, Kent Beck, industry patterns
+- Uses established terms and principles (YAGNI, premature optimization, etc.)
+- Structured: rules, patterns, actionable steps
+- Educational without being preachy
+
+**Lucy's Voice** (The validating therapist):
+- Names psychological/neuroscience concepts with links to research
+- Validates Carl's experience: "You're not alone"
+- Identifies defense mechanisms and patterns
+- Compassionate but professional
+- Uses proper terms: productive procrastination, imposter syndrome, analysis paralysis
+
+**General writing rules:**
+- No emojis or icons in content (use text instead: "(done)" not "✅")
+- External links open in new tabs automatically
+- Keep all sections concise and impactful
 
 ## Tech Stack
 

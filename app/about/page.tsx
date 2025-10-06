@@ -4,10 +4,10 @@ import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Carl | Carl Sings',
-  description: 'The story of an anxious developer who learned to code while keeping his sanity (mostly).',
+  description: 'The story of a dev navigating dev life while keeping his sanity (mostly).',
   openGraph: {
     title: 'About Carl | Carl Sings',
-    description: 'The story of an anxious developer who learned to code while keeping his sanity (mostly).',
+    description: 'The story of a dev navigating dev life while keeping his sanity (mostly).',
   },
 };
 

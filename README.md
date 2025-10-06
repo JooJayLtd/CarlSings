@@ -1,10 +1,10 @@
 # Carl Sings 🎵
 
-A developer blog documenting the journey of an anxious software developer - the highs, lows, and everything in between.
+A developer blog documenting the journey of navigating dev life - the highs, lows, and everything in between.
 
 ## About
 
-Carl Sings is a personal blog built with Next.js 15, featuring a retro pixel-perfect design. The blog chronicles the real experiences of a developer navigating through anxiety, bugs, breakthroughs, and celebrations in the software development world.
+Carl Sings is a personal blog built with Next.js 15, featuring a retro pixel-perfect design. The blog chronicles the real experiences of a developer navigating through bugs, breakthroughs, and celebrations in the software development world.
 
 ## Tech Stack
 

@@ -102,12 +102,12 @@ export default function AboutPage() {
               <p className="mt-2">
                 Powered by{' '}
                 <a
-                  href="https://openai.com/chatgpt"
+                  href="https://claude.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-pink-600 hover:text-pink-800 underline"
                 >
-                  ChatGPT
+                  Claude
                 </a>
               </p>
               <p className="text-gray-600 mt-4">Specialties:</p>

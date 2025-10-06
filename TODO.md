@@ -66,14 +66,14 @@
 
 ## Phase 8: Entries Pages
 
-- [ ] [CARLS-44] Create app/entries/page.tsx for all entries listing
+- [x] [CARLS-44] Create app/entries/page.tsx for all entries listing
 - [ ] [CARLS-45] Create app/entries/loading.tsx
 - [ ] [CARLS-46] Create app/entries/error.tsx
-- [ ] [CARLS-47] Create app/entries/[slug]/page.tsx for single entry with MDX rendering
+- [x] [CARLS-47] Create app/entries/[slug]/page.tsx for single entry with MDX rendering (includes three-perspective blog format)
 - [ ] [CARLS-48] Create app/entries/[slug]/loading.tsx
 - [ ] [CARLS-49] Create app/entries/[slug]/error.tsx
-- [ ] [CARLS-50] Add generateStaticParams to app/entries/[slug]/page.tsx
-- [ ] [CARLS-51] Add generateMetadata to app/entries/[slug]/page.tsx
+- [x] [CARLS-50] Add generateStaticParams to app/entries/[slug]/page.tsx
+- [x] [CARLS-51] Add generateMetadata to app/entries/[slug]/page.tsx
 
 ## Phase 9: Content System (File-based)
 
@@ -81,18 +81,18 @@
 - [x] [CARLS-53] Create content/entries/ subdirectory
 - [x] [CARLS-54] Create lib/content/mdx.ts with MDX file reading utilities
 - [x] [CARLS-55] Add frontmatter parsing to lib/content/mdx.ts
-- [ ] [CARLS-56] Create first sample entry MDX: "first-day-anxiety.mdx"
+- [x] [CARLS-56] Create first blog post: "procrastination-disguised-as-productivity.mdx"
 - [ ] [CARLS-57] Create second sample entry MDX: "discovered-usestate.mdx"
 - [ ] [CARLS-58] Create third sample entry MDX: "production-bug-nightmare.mdx"
 
 ## Phase 10: Data Access Layer (File-based)
 
-- [ ] [CARLS-59] Create lib/data/categories.ts with hardcoded categories array
+- [x] [CARLS-59] Create lib/data/categories.ts with hardcoded categories array
 - [ ] [CARLS-60] Add getCategoryBySlug function to lib/data/categories.ts
-- [ ] [CARLS-61] Create lib/data/entries.ts with file-based getEntries function
-- [ ] [CARLS-62] Add getEntryBySlug function to lib/data/entries.ts
-- [ ] [CARLS-63] Add getEntriesByCategory function to lib/data/entries.ts
-- [ ] [CARLS-64] Add getRecentEntries function to lib/data/entries.ts
+- [x] [CARLS-61] Create lib/data/entries.ts with file-based getEntries function
+- [x] [CARLS-62] Add getEntryBySlug function to lib/data/entries.ts
+- [x] [CARLS-63] Add getEntriesByCategory function to lib/data/entries.ts
+- [x] [CARLS-64] Add getRecentEntries function to lib/data/entries.ts and display on home page
 
 ## Phase 11: Additional Pages
 

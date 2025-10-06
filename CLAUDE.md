@@ -4,7 +4,7 @@ This file provides guidance to Basil (Claude Code at claude.ai/code) when workin
 
 ## Project Overview
 
-**Carl Sings** is a Next.js 15 blog application for documenting an anxious software developer's journey. The project features:
+**Carl Sings** is a Next.js 15 blog application for documenting a developer's journey navigating dev life. The project features:
 - Pixel-perfect retro aesthetic, clean modern design
 - Category-based content system ("Carl Discovered", "Carl Cried", etc.)
 - AI integrations for content analysis and recommendations

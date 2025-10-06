@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { MusicPlayer } from '@/components/music-player';
 
 export default function Home() {
@@ -35,12 +36,12 @@ export default function Home() {
             and everything in between on this chaotic journey through software development.
           </p>
           <div className="flex gap-4 justify-center mb-8">
-            <a href="/entries" className="pixel-button pixel-button-primary">
+            <Link href="/entries" className="pixel-button pixel-button-primary">
               Read Latest Entries
-            </a>
-            <a href="/about" className="pixel-button pixel-button-secondary">
+            </Link>
+            <Link href="/about" className="pixel-button pixel-button-secondary">
               About This Blog
-            </a>
+            </Link>
           </div>
 
           {/* Music Player */}

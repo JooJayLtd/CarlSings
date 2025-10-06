@@ -44,3 +44,7 @@ export const categories: Category[] = [
     description: 'Analysis paralysis and anxiety spirals',
   },
 ];
+
+export function getCategoryBySlug(slug: CategorySlug): Category | undefined {
+  return categories.find((category) => category.slug === slug);
+}

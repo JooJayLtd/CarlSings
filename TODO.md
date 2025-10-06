@@ -58,11 +58,11 @@
 - [ ] [CARLS-36] Create app/categories/page.tsx for all categories listing
 - [ ] [CARLS-37] Create app/categories/loading.tsx
 - [ ] [CARLS-38] Create app/categories/error.tsx
-- [ ] [CARLS-39] Create app/categories/[slug]/page.tsx for single category
+- [x] [CARLS-39] Create app/categories/[slug]/page.tsx for single category
 - [ ] [CARLS-40] Create app/categories/[slug]/loading.tsx
 - [ ] [CARLS-41] Create app/categories/[slug]/error.tsx
-- [ ] [CARLS-42] Add generateStaticParams to app/categories/[slug]/page.tsx
-- [ ] [CARLS-43] Add generateMetadata to app/categories/[slug]/page.tsx
+- [x] [CARLS-42] Add generateStaticParams to app/categories/[slug]/page.tsx
+- [x] [CARLS-43] Add generateMetadata to app/categories/[slug]/page.tsx
 
 ## Phase 8: Entries Pages
 
@@ -88,7 +88,7 @@
 ## Phase 10: Data Access Layer (File-based)
 
 - [x] [CARLS-59] Create lib/data/categories.ts with hardcoded categories array
-- [ ] [CARLS-60] Add getCategoryBySlug function to lib/data/categories.ts
+- [x] [CARLS-60] Add getCategoryBySlug function to lib/types/category.ts
 - [x] [CARLS-61] Create lib/data/entries.ts with file-based getEntries function
 - [x] [CARLS-62] Add getEntryBySlug function to lib/data/entries.ts
 - [x] [CARLS-63] Add getEntriesByCategory function to lib/data/entries.ts
@@ -127,4 +127,4 @@
 ---
 
 **Total Tasks:** 84
-**Current Progress:** 31/84 (37%)
+**Current Progress:** 35/84 (42%)

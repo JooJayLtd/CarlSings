@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-white border-b-2 border-gray-200 py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="mb-6 flex items-center justify-center gap-8">
+          <div className="mb-6 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
             <pre className="font-mono text-xs md:text-sm leading-none" style={{ color: 'var(--pixel-blue)' }}>
 {` 
 #     #       #####                      

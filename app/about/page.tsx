@@ -25,7 +25,7 @@ export default function AboutPage() {
         </Link>
 
         {/* Header */}
-        <div className="pixel-card mb-8">
+        <div className="pixel-card p-8 mb-8">
             <h2 className="font-mono text-2xl mb-4">
                 <span className="text-gray-500">$</span>whoAmI
             </h2>
@@ -55,7 +55,7 @@ export default function AboutPage() {
         <div className="space-y-8">
 
           {/* Basil */}
-          <section className="pixel-card bg-blue-50 border-2 border-blue-200">
+          <section className="pixel-card p-8 bg-blue-50 border-2 border-blue-200">
             <h2 className="font-mono text-2xl mb-4">
               <span className="text-gray-500">$</span>whoIsBasil
             </h2>
@@ -93,7 +93,7 @@ export default function AboutPage() {
           </section>
 
           {/* Lucy */}
-          <section className="pixel-card bg-pink-50 border-2 border-pink-200">
+          <section className="pixel-card p-8 bg-pink-50 border-2 border-pink-200">
             <h2 className="font-mono text-2xl mb-4">
               <span className="text-gray-500">$</span>whoIsLucy
             </h2>
@@ -131,7 +131,7 @@ export default function AboutPage() {
           </section>
 
           {/* Connect */}
-          <section className="pixel-card border-2 border-dashed border-gray-300">
+          <section className="pixel-card p-8 border-2 border-dashed border-gray-300">
             <h2 className="font-mono text-2xl mb-4">
               <span className="text-gray-500">$</span>ping
             </h2>

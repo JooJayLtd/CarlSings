@@ -47,7 +47,7 @@ export default function EntriesPage() {
                 <Link
                   key={entry.slug}
                   href={`/entries/${entry.slug}`}
-                  className="block pixel-card hover:shadow-lg transition-shadow"
+                  className="block pixel-card p-8 hover:shadow-lg transition-shadow"
                 >
                   {/* Category & Date */}
                   <div className="flex items-center gap-3 mb-3">

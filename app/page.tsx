@@ -37,8 +37,7 @@ export default function Home() {
             </pre>
           </div>
           <p className="font-primary text-gray-600 text-lg md:text-xl leading-relaxed mb-8">
-            Welcome to your developer blog. A place to document the highs, lows,
-            and everything in between on this chaotic journey through software development.
+            Carl discovers bugs. Carl debugs life. Carl carries on.
           </p>
           <div className="flex gap-4 justify-center mb-8">
             <Link href="/entries" className="pixel-button pixel-button-primary">
@@ -80,7 +79,7 @@ export default function Home() {
                 <Link
                   key={entry.slug}
                   href={`/entries/${entry.slug}`}
-                  className="block pixel-card p-6 hover:shadow-lg transition-shadow"
+                  className="block pixel-card p-8 hover:shadow-lg transition-shadow"
                 >
                   {/* Category & Date */}
                   <div className="flex items-center gap-3 mb-3">

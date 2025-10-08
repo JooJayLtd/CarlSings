@@ -88,7 +88,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 <Link
                   key={entry.slug}
                   href={`/entries/${entry.slug}`}
-                  className="block pixel-card p-6 hover:shadow-lg transition-shadow"
+                  className="block pixel-card p-8 hover:shadow-lg transition-shadow"
                 >
                   {/* Date */}
                   <div className="flex items-center gap-3 mb-3">

@@ -170,7 +170,6 @@
 }
 
 .pixel-card:hover {
-  border-color: var(--pixel-blue);
   box-shadow: 0 4px 12px rgba(71, 133, 255, 0.15);
 }
 

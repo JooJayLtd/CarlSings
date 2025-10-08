@@ -9,7 +9,7 @@ interface MusicPlayerProps {
 
 export function MusicPlayer({ url, spotifyTrackId, title, artist }: MusicPlayerProps) {
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-lg mx-auto">
       <div className="pixel-card p-4">
         {/* Title and Spotify Link */}
         <div className="flex items-start justify-between mb-3">

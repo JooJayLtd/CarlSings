@@ -1,0 +1,85 @@
+---
+title: "Mismatched Test Patterns"
+category: "carl-cried"
+anxietyLevel: 5
+date: "2025-10-15"
+slug: "mismatched-test-patterns"
+excerpt: "Carl reviewed a test. MockitoExtension meets @SpringBootTest. Carl tried to explain. Carl cried."
+tags: ["testing", "code-review", "spring-boot-test", "junit", "technical-debt"]
+carlLog: "MockitoExtension + @SpringBootTest = compiles legally, illegally confusing."
+basilLog: "Unit tests vs integration tests. Know the difference. Use the right tool."
+lucyLog: "Cognitive dissonance: when patterns don't match what you learned. The self-doubt is normal."
+---
+
+<CarlSection>
+
+Carl saw a PR with a test.
+
+Carl wanted to learn.
+
+`MockitoExtension`. `@SpringBootTest`. `TestConfiguration` with `Mockito.mock` beans.
+
+Carl blinked once. Carl blinked twice. Carl spit the lavender tea.
+
+Carl commented.
+
+Carl cried anyway.
+
+</CarlSection>
+
+<BasilSection>
+
+[Unit tests](https://martinfowler.com/bliki/UnitTest.html) vs [integration tests](https://martinfowler.com/bliki/IntegrationTest.html). Different tools. Different purposes.
+
+**Unit test:**
+- Tests a single class in isolation
+- Fast (milliseconds)
+- Uses mocks for dependencies
+- [`MockitoExtension`](https://javadoc.io/doc/org.mockito/mockito-junit-jupiter/latest/org.mockito.junit.jupiter/org/mockito/junit/jupiter/MockitoExtension.html) is appropriate here
+
+**Integration test:**
+- Tests components working together
+- Slower (seconds)
+- Uses real dependencies (database, Spring context)
+- `@SpringBootTest` is appropriate here
+
+**The problem:** Using `MockitoExtension` with `@SpringBootTest`.
+
+`@SpringBootTest` loads the Spring context. That's integration testing. Use [`@MockitoBean`](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/mock/mockito/MockitoBean.html) to mock external dependencies, not `MockitoExtension` + `Mockito.mock()`.
+
+**Better approach:**
+- Unit test: `MockitoExtension` + `Mockito.mock()` for dependencies (no Spring)
+- Integration test: `@SpringBootTest` + [`@MockitoBean`](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html#testing.spring-boot-applications.mocking-beans) for external services
+
+Spring provides `application-test.properties` for test-specific configuration. Use it.
+
+[Test pyramid](https://martinfowler.com/bliki/TestPyramid.html): Many unit tests, fewer integration tests, even fewer end-to-end tests.
+
+Mixed patterns create slow tests that don't catch real integration issues. Choose the right tool.
+
+</BasilSection>
+
+<LucySection>
+
+Carl saw something confusing and wanted to understand. That's healthy curiosity.
+
+Then came [cognitive dissonance](https://en.wikipedia.org/wiki/Cognitive_dissonance). Your brain sees a mismatch between what you learned and what you're seeing. That discomfort? That's your brain trying to make sense of conflicting information.
+
+**The internal dialogue:**
+- "I thought unit tests and integration tests were different things."
+- "Maybe I'm wrong?"
+- "But the documentation says..."
+- "Maybe I don't understand Spring testing?"
+
+This self-doubt is normal when patterns don't match expectations. Your brain questions itself before questioning external sources—especially when there's a perceived authority gap.
+
+**What helps:**
+Carl commented. That's the right move. Share your understanding, provide resources, stay curious. Maybe you'll learn something new. Maybe they will.
+
+The frustration comes from caring about code quality. That's not a weakness.
+
+You're not wrong for noticing mismatched patterns. Technical confusion is a valid reason to ask questions.
+
+</LucySection>
+
+---

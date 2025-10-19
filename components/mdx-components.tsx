@@ -106,5 +106,13 @@ export function getMDXComponents(customData: CustomComponents): MDXComponents {
       // Regular bold text
       return <strong {...props}>{children}</strong>;
     },
+    // Style inline code
+    code: ({ children, ...props }) => {
+      return (
+        <code className="px-1.5 py-0.5 bg-gray-100 text-gray-800 rounded font-mono text-sm not-prose" {...props}>
+          {children}
+        </code>
+      );
+    },
   };
 }

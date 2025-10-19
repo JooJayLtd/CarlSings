@@ -23,7 +23,7 @@ export const categories: Category[] = [
     slug: 'carl-cried',
     name: 'Carl Cried',
     icon: '😢',
-    description: 'Debugging disasters and emotional breakdowns',
+    description: 'Where everything breaks, including Carl',
   },
   {
     slug: 'carl-debugged',

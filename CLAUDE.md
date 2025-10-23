@@ -222,5 +222,24 @@ Use Zod for runtime validation of content structure.
 - When completing a task, add test cases to TEST_PLAN.md for that CARLS number
 - Actual test implementation happens in Phase 12 (CARLS-68+)
 - Use TEST_PLAN.md as a checklist when writing tests later
-- CLAUDE.md
-- CLAUDE.md
+
+## Tools
+
+Carl Sings includes interactive tools to support mental health and well-being:
+
+### Mental Patrol
+
+A mental health companion designed to interrupt rumination loops. See **README_MENTAL_PATROL.md** for full documentation.
+
+**Key Features:**
+- Interactive pet companion (Cat, Dog, Bunny, Bird, Fox)
+- Supportive messages across 5 categories (Grounding, Redirecting, Validating, Forward-thinking, Gentle)
+- Persistent pet selection and click tracking via localStorage
+- CSS/SVG-based pet animations
+- Designed to be portable (can be extracted as Chrome Extension later)
+
+**Implementation Notes:**
+- Lives in `app/tools/mental-patrol/`
+- Uses Client Component for interactivity
+- Follows CarlSings retro pixel aesthetic
+- Self-contained and can be accessed via Tools navigation section

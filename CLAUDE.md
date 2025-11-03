@@ -211,10 +211,51 @@ Use Zod for runtime validation of content structure.
 
 ## Pull Request Guidelines
 
-- Follow the template in `.github/PULL_REQUEST_TEMPLATE.md`
-- Do NOT include a Test Plan section - the CI/CD pipeline handles automated checks (build, lint, type-checking)
+### Branch naming
+- `feature/<CARLS-no>-description` or `fix/<CARLS-no>-description`
+- Examples: `feature/CARLS-MT-1-8-mental-patrol-foundation`, `fix/CARLS-8-strict-tsconfig`
+
+### Commit message structure
+- No emoji or Claude references in commit message
+- Title line: `<CARLS-no>: <Concise description of change>`
+- Only include `Co-Authored-By: Basil <noreply@anthropic.com>` at the end
+- When creating commits or PRs, use this structure:
+
+```markdown
+## Summary
+
+<1-2 sentence description of what this PR accomplishes>
+
+## Related Issue
+
+Closes #<issue-number>
+Closes #<issue-number>
+...
+
+## Changes
+
+<Organize by phase/category if multiple phases>
+
+### <Phase/Category Name> (CARLS-X through CARLS-Y)
+- <Specific change 1>
+- <Specific change 2>
+- <Nested details if needed>
+  - Sub-point 1
+  - Sub-point 2
+
+## <Optional: Architecture Notes / Technical Details / Progress>
+
+<Any important context about implementation decisions, future plans, or progress tracking>
+
+---
+
+Co-Authored-By: Basil <noreply@anthropic.com>
+```
+
+**Guidelines:**
+- Do NOT include a Test Plan section - CI/CD handles automated checks (build, lint, type-checking)
 - Manual testing is assumed to be completed before creating the PR
-- Always include `Co-Authored-By: Basil <noreply@anthropic.com>` at the end of PR descriptions
+- Keep Summary concise (1-2 sentences)
 
 ## Testing Strategy
 

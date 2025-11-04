@@ -1,0 +1,26 @@
+{
+  "name": "carls-soul-battery-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to track your soul battery depletion during work hours",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "lottie-react": "^2.4.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

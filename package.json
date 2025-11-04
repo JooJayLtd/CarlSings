@@ -7,7 +7,9 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:soul-battery-chrome-extension": "cd chrome-extension/soul-battery && npm install && npm run build",
+    "pack:soul-battery-chrome-extension": "npm run build:soul-battery-chrome-extension && cd chrome-extension/soul-battery/dist && zip -r ../soul-battery-extension.zip ."
   },
   "dependencies": {
     "@next/mdx": "^15.5.4",

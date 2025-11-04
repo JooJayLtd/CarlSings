@@ -14,7 +14,6 @@ interface MoodDisplayProps {
 export function MoodDisplay({ mood }: MoodDisplayProps) {
   // Select animation based on mood
   let animationData = null;
-  const size = "w-48 h-48"; // default size
 
   switch (mood) {
     case 'happy':
@@ -32,7 +31,7 @@ export function MoodDisplay({ mood }: MoodDisplayProps) {
   }
 
   return (
-    <div className={size}>
+    <div className="soul-battery-animation">
       <Lottie
         animationData={animationData}
         loop={true}

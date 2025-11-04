@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carl's Soul Battery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="soul-battery.css">
+  <style>
+    body {
+      width: 400px;
+      min-height: 350px;
+      margin: 0;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: white;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4785ff;
+      font-size: 20px;
+      margin: 0 0 10px 0;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    #message {
+      background: #f9fafb;
+      border-radius: 8px;
+      min-height: 40px;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    .info {
+      text-align: center;
+      font-size: 11px;
+      color: #9ca3af;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Soul Battery</h1>
+
+  <div id="battery-container">
+    <!-- Battery SVG and animation will be injected here -->
+  </div>
+
+  <div id="message" class="soul-battery-message">
+    <!-- Sarcastic message will appear here -->
+  </div>
+
+  <div class="info">
+    <p>Work: 9 AM - 6 PM (depletes to 0%)</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

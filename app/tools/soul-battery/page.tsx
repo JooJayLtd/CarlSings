@@ -4,9 +4,10 @@ import { BatteryDisplay } from '@/components/soul-battery/battery-display';
 import { useSoulBattery } from '@/lib/hooks/useSoulBattery';
 import { getRandomMessage } from '@/lib/data/soul-battery-messages';
 import { useMemo } from 'react';
+import '@/components/soul-battery/soul-battery.css';
 
 export default function SoulBatteryPage() {
-  const { percentage, color, label, mood, isLoading } = useSoulBattery();
+  const { percentage, color, mood, isLoading } = useSoulBattery();
 
   // Get a random message for the current mood (memoized to avoid changing on every render)
   const message = useMemo(() => getRandomMessage(mood), [mood]);

@@ -1,0 +1,29 @@
+/* Soul Battery Shared Styles */
+
+.soul-battery-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.soul-battery-animation {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.soul-battery-svg {
+  width: 150px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+.soul-battery-message {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem;
+  line-height: 1.6;
+}

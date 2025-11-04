@@ -11,16 +11,14 @@ interface BatteryDisplayProps {
 
 export function BatteryDisplay({ percentage, color, mood }: BatteryDisplayProps) {
   return (
-    <div className="flex items-center justify-center gap-8">
+    <div className="soul-battery-container">
       {/* Mood Animation */}
       <MoodDisplay mood={mood} />
 
       {/* Battery SVG */}
       <svg
-        width="200"
-        height="100"
         viewBox="0 0 300 150"
-        className="drop-shadow-lg"
+        className="soul-battery-svg"
       >
         {/* Battery Body */}
         <rect

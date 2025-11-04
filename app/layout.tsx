@@ -22,6 +22,7 @@ const pressStart2P = Press_Start_2P({
 });
 
 import { Navigation } from "@/components/navigation";
+import { AppSidebar } from "@/components/app-sidebar";
 
 export const metadata: Metadata = {
   title: "Carl Sings - Developer Blog",
@@ -39,7 +40,10 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} ${pressStart2P.variable} antialiased`}
       >
         <Navigation />
-        {children}
+        <AppSidebar />
+        <div className="ml-16">
+          {children}
+        </div>
       </body>
     </html>
   );
